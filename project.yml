@@ -1,0 +1,28 @@
+name: PuenteWeb
+options:
+  bundleIdPrefix: com.puenteweb
+targets:
+  PuenteWeb:
+    type: application
+    platform: iOS
+    deploymentTarget: "12.0"
+    sources:
+      - PuenteWeb
+    info:
+      path: PuenteWeb/Info.plist
+      properties:
+        CFBundleDisplayName: PuenteWeb
+        UILaunchStoryboardName: LaunchScreen
+        UIRequiredDeviceCapabilities: [armv7]
+        UIRequiresFullScreen: true
+        UIStatusBarHidden: true
+        UIViewControllerBasedStatusBarAppearance: true
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationLandscapeRight, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationPortrait]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationLandscapeRight, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationPortrait]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.puenteweb.app
+        SWIFT_VERSION: "5.0"
+        CODE_SIGNING_ALLOWED: "NO"
+        CODE_SIGNING_REQUIRED: "NO"
+        CODE_SIGN_IDENTITY: ""
